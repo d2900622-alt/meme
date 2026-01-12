@@ -1,0 +1,124 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container header-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149229.png" alt="" class="logo">
+            <div class="nav">
+                <a href="#">Главное</a>
+                <a href="#about">Обо мне </a>
+                <a href="#contact"> Контакты </a>
+            </div>
+        </div>
+    </div>
+    <div class="container main">
+        <div class="main-text">
+            <h1 class="title">Привет!</h1>
+            <h3 class="subtitle">Меня зовут <b>Демид</b>
+                Я учусь создавать сайты
+            </h3>
+
+        </div>
+        <img src="img/minion.png" alt=""
+            class="main-img">
+    </div>
+    <div class="container about" id="about">
+        <h1 class="title">Обо мне </h1>
+        <div class="cards">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHAFYizBYvFHwpsulARVeRvKsKvPPAGvsD0Q&s"
+                    width="200">
+                <p>У меня есть несколько хобби одно з ни это бокс</p>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://6.edubish.kg/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwTMDmcSSBDXNgevOg5QoUcDSUIeU_lpX6EQ&s"
+                    width="200"></a>
+                
+                <p>Мне 11 лет я хожу в обычную 6 школу в Бишкеке</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr56dMjTTikb7JgAZrkRsCgg44fDUedvTHAQ&s"
+                    width="200">
+                <p>А второе мое хобби это футболл </p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHAFYizBYvFHwpsulARVeRvKsKvPPAGvsD0Q&s"
+                    width="200">
+                <p>У меня есть несколько хобби одно з ни это бокс</p>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://6.edubish.kg/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwTMDmcSSBDXNgevOg5QoUcDSUIeU_lpX6EQ&s"
+                    width="200"></a>
+                
+                <p>Мне 11 лет я хожу в обычную 6 школу в Бишкеке</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr56dMjTTikb7JgAZrkRsCgg44fDUedvTHAQ&s"
+                    width="200">
+                <p>А второе мое хобби это футболл </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="container contact" id="contact">
+        <h1 class="title">Контакты</h1>
+        <h3 class="subtitle">Если хочешь пообщаться сомной свяжись любым удобным способом</h3>
+        <div class="links">
+            <a href=""><img src="img/ватсап.png" alt="" width="100"></a>
+            <a href=""><img src="img/телеграм.png" alt="" width="100"></a>
+            <a href=""><img src="img/ютуб.png" alt="" width="100"></a>
+        </div>
+    </div>
+   <div class="footer">
+    &copy;2025
+   </div>
+    
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мемный Звук</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💥 Мемные Звуки 💥</h1>
+        <p>Нажми на кнопку и послушай мем!</p>
+        <button id="memeButton">Нажми меня!</button>
+    </div>
+
+    <script>
+        // Ссылки на реально рабочие короткие мемные звуки
+        const sounds = [
+            'https://www.myinstants.com/media/sounds/airhorn.mp3',
+            'https://www.myinstants.com/media/sounds/that_was_easy.mp3',
+            'https://www.myinstants.com/media/sounds/nooo.mp3',
+            'https://www.myinstants.com/media/sounds/vine-boom.mp3',
+            'https://www.myinstants.com/media/sounds/oof.mp3'
+        ];
+
+        const button = document.getElementById('memeButton');
+
+        button.addEventListener('click', () => {
+            const randomSound = sounds[Math.floor(Math.random() * sounds.length)];
+            const audio = new Audio(randomSound);
+            audio.play().catch(err => console.log("Ошибка воспроизведения: ", err));
+        });
+    </script>
+</body>
+</html>
